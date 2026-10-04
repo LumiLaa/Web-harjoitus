@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Joukkoe</title>
+    <link rel="stylesheet" href="joukkoe.css">
 </head>
 <body>
     <h1>Rauman lukon pelaajat</h1>
 
-    <h2>Hyökkääjiä:</h2> 
+    <h2>Hyökkääjät</h2> 
+    <section class="hyökkääjät">
     Leo Tuuva 6 <br>
     Alex Beaucage 16 <br> 
     Heikki Liedes 18 <br>
@@ -24,8 +26,10 @@
     Lenni Hämäläinen 90 <br>
     Felix Robert 91 <br>
     Mikael Ruohomaa 93
+    </section>
 
     <h2>Puolustajat</h2>
+    <section class="puolustajat">
     Jakob Stenqvist 9 <br>
     Jirko Tukiainen 15 <br>
     Jakub Floris 19 <br>
@@ -34,9 +38,36 @@
     Arttu Välilä 43 <br>
     Anton Olsson 56 <br>
     Chris Harpur 96 
+    </section>
 
     <h2>Maalivahdit</h2>
+    <section class="maalivahdit">
     Daniel Salonen 30 <br>
     Antti Raanta 32
+    </section>
+
+    <section class="carousel-section">
+        <h2>Kuvia pelaajista</h2>
+        <p>Kuvia voi skrollata</p>
+        <div class="carousel">
+          <figure class="carousel-item" id="slide1">
+            <img src="jami.png" alt="pelaaja1">
+            <figcaption>Jami Krannila 24</figcaption>
+          </figure>
+          <figure class="carousel-item" id="slide2">
+            <img src="nuutti.png" alt="pelaaja2">
+            <figcaption>Nuutti Viitasalo 34</figcaption>
+          </figure>
+          <figure class="carousel-item" id="slide3">
+            <img src="daniel.png" alt="pelaaja3">
+            <figcaption>Daniel Salonen 30</figcaption>
+          </figure>
+        </div>
+        <nav class="carousel-nav">
+            <a href="#slide1">1</a>
+            <a href="slide2">2</a>
+            <a href="slide3">3</a>
+        </nav>
+     </section>
 </body>
 </html>
