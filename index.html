@@ -5,13 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="RL.png" type="image/svg+xml">
 </head>
 <body>
     <!-- Otsikko -->
+     <header class="header">
+        <div>
      <h1>Rauman lukko</h1>
-     <p class="esittely">Tietoa Rauman lukosta</p>
+     </div>
+     <div class="header-info">
+     <p class="esittely">Tietoa Rauman lukosta:</p>
      <p class="esittely">Rauman lukko on suomalainen SM-liiga joukkoe, joka on voittanut mestaruuden kaksi kertaa.</p>
      <p class="esittely">Hopea mitaleja löytyy kolme ja pronssi mitaleja kuusi.</p>
+     </div>
+     </header>
+
+     <nav class="nav">
+        <ul>
+        <li><a href="#">Etusivu</a></li>
+        <li><a href="#">Pelaajat</a></li>
+        <li><a href="#" class="active">Lippu kauppa</a></li>
+        </ul>
+     </nav>
+
+     <main class="main">
+     <h1>Rauman lukon pelaajat</h1>
+
+     <article class="hyökkääjä-article">
+    <h2>Hyökkääjät</h2> 
+    <section class="pelaajat">
+    Leo Tuuva 6 <br>
+    Alex Beaucage 16 <br> 
+    Heikki Liedes 18 <br>
+    Daniil Trakht 23 <br>
+    Jami Krannila 24 <br>
+    Antti Saarela 25 <br>
+    Aapo Vanninen 29 <br>
+    Topias Haapanen 47 <br>
+    Henri Ikonen 48 <br>
+    Jasu Mensonen 57 <br>
+    Santeri Virtanen 75 <br>
+    Aleksi Saarela 87 <br>
+    Lenni Hämäläinen 90 <br>
+    Felix Robert 91 <br>
+    Mikael Ruohomaa 93
+    </section>
+    </article>
+
+    <article class="puolustaja-article">
+    <h2>Puolustajat</h2>
+    <section class="pelaajat">
+    Jakob Stenqvist 9 <br>
+    Jirko Tukiainen 15 <br>
+    Jakub Floris 19 <br>
+    Peetro Seppälä 27 <br>
+    Nuutti Viitasalo 34 <br>
+    Arttu Välilä 43 <br>
+    Anton Olsson 56 <br>
+    Chris Harpur 96 
+    </section>
+    </article>
+
+    <article class="maalivahti-article">
+    <h2>Maalivahdit</h2>
+    <section class="pelaajat">
+    Daniel Salonen 30 <br>
+    Antti Raanta 32
+    </section>
+    </article>
+    </main>
+
+    <section class="carousel-section">
+        <h3>Kuvia pelaajista</h3>
+        <p class="kuva">Kuvia voi skrollata</p>
+        <div class="carousel">
+          <figure class="carousel-item" id="slide1">
+            <img src="jami.png" alt="pelaaja1">
+            <figcaption class="kuva">Jami Krannila 24</figcaption>
+          </figure>
+          <figure class="carousel-item" id="slide2">
+            <img src="nuutti.png" alt="pelaaja2">
+            <figcaption class="kuva">Nuutti Viitasalo 34</figcaption>
+          </figure>
+          <figure class="carousel-item" id="slide3">
+            <img src="daniel.png" alt="pelaaja3">
+            <figcaption class="kuva">Daniel Salonen 30</figcaption>
+          </figure>
+        </div>
+        <nav class="carousel-nav">
+            <a href="#slide1">1</a>
+            <a href="slide2">2</a>
+            <a href="slide3">3</a>
+        </nav>
+     </section>
+
+     <aside class="sidebar">
+
+    <h3>Tulevia otteluita</h3> <br>
+    <ul>
+    <li><a href="#">Lukko-Jyp 9.9</a></li> <br>
+    <li><a href="#">Lukko-Sport 17.9</a></li> <br>
+    <li><a href="#">Hifk-Lukko 19.9</a></li> <br>
+    <li><a href="#">Hpk-Lukko 22.9</a></li> <br>
+    <li><a href="#">Lukko-Tappara 24.9</a></li> <br>
+    <li><a href="#">Kalpa-Lukko 26.9</a></li> <br>
+    </ul>
+    </aside>
+<!-- Linkki koko Lukon otteluohjelmaan -->
+    <p class="ottelu">Rauman lukon koko kauden otteluohjelma:</p>
+ <a href="https://www.raumanlukko.fi/otteluohjelma" target="_blank">Rauman lukon otteluohjelma</a>
 
      <p class="linkki">Linkit</p>
      <ul>
@@ -20,7 +122,7 @@
      </ul>
 
      <section class="yhteystiedot">
-            <h2>Yhteystiedot</h2>
+            <h3>Yhteystiedot</h3>
             <p>Raumakatu 10</p>
             <p>12335 Rauma</p>
             <p>raumalukko@rauma.fi</p>

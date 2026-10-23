@@ -1,11 +1,65 @@
 body {
-    background-color: rgb(16, 16, 117);
+    background-color: rgb(0, 27, 71);
 }
 
 h1 {
     color: rgb(231, 223, 20);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(15, 15, 15);
+}
+
+h3 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(231, 223, 20);
+}
+
+.nav {
+    grid-area: nav;
+    background-color: rgb(0, 36, 94);
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav a {
+    display: block;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+.nav a:hover, .nav a:focus {
+    background-color: silver;
+}
+
+.nav a.active {
+    background-color: rgb(231, 223, 20);
+    color: whitesmoke;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: rgb(0, 36, 94);
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar a {
+    font-style: bold;
+    color: rgb(231, 223, 20);
+    text-decoration: none;
 }
 
 .esittely {
@@ -22,4 +76,107 @@ h1 {
 .yhteystiedot {
     font-size: 15px;
     padding: 10px;
+}
+
+.pelaajat {
+    color: black;
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 36, 94);
+    padding: 20px;
+    margin: 0;
+}
+
+.main {
+    grid-area: main;
+}
+
+.main h2 {
+    margin-bottom: 20px;
+}
+
+.article-grid {
+    display: grid;
+    grid-auto-columns: repeat (auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.hyökkääjä-article {
+    background-color: rgb(231, 223, 20);
+    border: 1px solid whitesmoke;
+    padding: 20px;
+}
+
+.puolustaja-article {
+    margin-top: 20px;
+   background-color: rgb(231, 223, 20);
+   border: 1px solid whitesmoke;
+}
+
+.maalivahti-article {
+    margin-top: 20px;
+   background-color: rgb(231, 223, 20);
+   border: 1px solid whitesmoke;
+}
+
+
+.carousel-section {
+    margin-bottom: 60px;
+}
+
+.carousel-section p {
+    margin-bottom: 20px;
+}
+
+.carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: proximity;
+    scroll-behavior: smooth;
+    padding-bottom: 20px;
+    scrollbar-width: none;
+}
+
+.carousel-item {
+    flex: 0 0 80%;
+    scroll-snap-align: center;
+}
+
+.carousel-item img {
+    width: 60%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-item figcaption {
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.carousel-nav {
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.yhteystiedot {
+    color: rgb(231, 223, 20);
+}
+
+.ottelu {
+    color: rgb(231, 223, 20);
+}
+
+.kuva {
+    color: rgb(231, 223, 20);
 }
