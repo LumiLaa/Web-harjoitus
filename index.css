@@ -70,7 +70,7 @@ h3 {
 
 .linkki {
     font-size: 20px;
-    color: black;
+    color: rgb(231, 223, 20);
 }
 
 .yhteystiedot {
@@ -179,4 +179,9 @@ h3 {
 
 .kuva {
     color: rgb(231, 223, 20);
+}
+
+video {
+    display: block;
+    margin: 0 auto;
 }
