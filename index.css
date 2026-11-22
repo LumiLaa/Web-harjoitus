@@ -186,3 +186,73 @@ video {
     display: block;
     margin: 0 auto;
 }
+
+.pelaajataulukko {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 14px;
+    background-color: rgb(231, 223, 20);
+}
+
+.pelaajataulukko th,
+.pelaajataulukko td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid;
+}
+
+.pelaajataulukko th {
+    background-color: rgb(0, 36, 94);
+    color: rgb(231, 223, 20);
+}
+
+.lukko-lomake {
+    background-color: rgb(0, 36, 94);
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.lukko-lomake label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: rgb(231, 223, 20);
+}
+
+.lukko-lomake input,
+.lukko-lomake select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.tulos-rivi {
+    display: flex;
+    gap: 10px;
+}
+
+.tulos-rivi div {
+    flex: 1;
+}
+
+.lukko-lomake button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(0, 36, 94);
+    color: rgb(231, 223, 20);
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.lukko-lomake button:hover {
+    background-color: rgb(0, 27, 71);
+}

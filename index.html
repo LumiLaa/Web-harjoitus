@@ -101,6 +101,38 @@
 
      <aside class="sidebar">
 
+      <h3>Top 3 pelaajat</h3>
+      <table class="pelaajataulukko">
+        <thead>
+          <tr>
+            <th>Pelaaja</th>
+            <th>Maalit</th>
+            <th>Syötöt</th>
+            <th>Pisteet</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>A. Beaucage</td>
+            <td>7</td>
+            <td>9</td>
+            <td><strong>16</strong></td>
+          </tr>
+          <tr>
+            <td>F. Robert</td>
+            <td>8</td>
+            <td>7</td>
+            <td><strong>15</strong></td>
+          </tr>
+          <tr>
+            <td>A. Saarela</td>
+            <td>4</td>
+            <td>10</td>
+            <td><strong>14</strong></td>
+          </tr>
+        </tbody>
+      </table>
+
     <h3>Tulevia otteluita</h3> <br>
     <ul>
     <li><a href="#">Lukko-Jyp 9.9</a></li> <br>
@@ -111,6 +143,33 @@
     <li><a href="#">Kalpa-Lukko 26.9</a></li> <br>
     </ul>
     </aside>
+
+   <h3>Veikkaa seuraavan ottelun tulos</h3>
+   <form class="lukko-lomake" action="#" method="post">
+    <label for="ottelu">Valitse ottelu:</label>
+    <select name="ottelu" id="ottelu">
+      <option value="lukko-jyp">Lukko-Jyp (9.9.)</option>
+      <option value="lukko-sport">Lukko-Sport (17.9.)</option>
+      <option value="hifk-lukko">Hifk-Lukko (19.9.)</option>
+    </select>
+
+    <div class="tulos-rivi">
+      <div>
+        <label for="koti">Koti:</label>
+        <input type="number" id="koti" name="koti" min="0" max="20">
+      </div>
+      <div>
+        <label for="vieras">Vieras:</label>
+        <input type="number" id="vieras" name="vieras" min="0" max="20">
+      </div>
+    </div>
+
+    <label for="nimimerkki">Nimimerkki:</label>
+    <input type="text" id="nimimerkki" name="nimimerkki" placeholder="Sinikeltainen" required>
+
+    <button type="submit">Lähetä veikkaus</button>
+   </form>
+
 <!-- Linkki koko Lukon otteluohjelmaan -->
     <p class="ottelu">Rauman lukon koko kauden otteluohjelma:</p>
  <a href="https://www.raumanlukko.fi/otteluohjelma" target="_blank">Rauman lukon otteluohjelma</a>
